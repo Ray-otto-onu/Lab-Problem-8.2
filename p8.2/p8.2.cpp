@@ -10,9 +10,14 @@ int main(void) {
 	int length = 0;
 	string input;
 
-	getline(cin, input);
-	length = countWords(input);
-	cout << "Word count " << length << endl;
+	while (true) {
+		cout << "Enter a string or Q to quit: ";
+		getline(cin, input);
+		if (input == "Q") break;
+		length = countWords(input);
+		cout << "letter count " << length << endl;
+	}
+	return 0;
 }
 
 int countWords(string str) {
