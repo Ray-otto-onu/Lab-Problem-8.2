@@ -29,5 +29,6 @@ int countWords(string str) {
 			length++;
 		}
 	}
+
 	return length + 1;
 }
