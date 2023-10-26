@@ -28,6 +28,7 @@ int countWords(string str) {
 		if (str[i] == ' ') {
 			length++;
 		}
+		if ()
 	}
 
 	return length + 1;
